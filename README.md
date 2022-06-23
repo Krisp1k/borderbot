@@ -9,3 +9,5 @@ This bot will feature information about
 - fun commands
 - and maybe something more
 </pre>
+
+Coming 2022
