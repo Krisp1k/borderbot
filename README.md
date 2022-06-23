@@ -1,5 +1,5 @@
 # BorderBot
-a Discord bot for anything related to BL franchise <br><br>
+a Discord bot for anything related to Borderlands franchise <br><br>
 This bot will feature information about 
 <pre>
 - games
