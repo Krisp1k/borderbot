@@ -2,13 +2,14 @@
   "name": "borderbot",
   "version": "1.0.0",
   "description": "Unofficial Borderlands related Discord bot",
-  "main": "index.js",
+  "main": "index.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon index.ts"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Krisp1k/borderbot.git"
+    "url": "https://github.com/Krisp1k/borderbot.git"
   },
   "keywords": [
     "Discord",
@@ -32,6 +33,7 @@
   "homepage": "https://github.com/Krisp1k/borderbot#readme",
   "dependencies": {
     "discord.js": "^13.8.1",
-    "dotenv": "^16.0.1"
+    "dotenv": "^16.0.1",
+    "fs": "^0.0.1-security"
   }
 }
