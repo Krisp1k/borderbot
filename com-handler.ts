@@ -11,7 +11,9 @@ export default(client:Client) => {
     const prefix = "$"
 
     const commandFiles = getFiles('./commands',suffix)
-    console.log(`Commands loaded: ${commandFiles}`)
+    
+    console.log(`Commands loaded:`)
+    commandFiles.forEach(file => console.log(file))
 
     for (const comm of commandFiles) {
         let singleCommand = require(comm)
@@ -43,4 +45,3 @@ export default(client:Client) => {
         }
     })
 }
-

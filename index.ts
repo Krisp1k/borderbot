@@ -1,5 +1,6 @@
 import DiscordJS, { Intents } from 'discord.js'
 import dotenv from 'dotenv'
+
 dotenv.config({path: "./vars/.env"})
 
 const client = new DiscordJS.Client({
@@ -19,16 +20,17 @@ client.on("ready", () => {
     handler(client)
 
     // statuses
-    const statuses = ["Anything related to Borderlands","Type '$help' for more info"]
+    const statuses = [
+        "Anything related to Borderlands",
+        "Type '$help' for more info",
+        "Currently version 1.0.0"
+    ]
     let i = 0
+
     const updateStatus = () => {
         client.user?.setPresence({
             status: "online",
-            activities: [
-                {
-                    name: statuses[i]
-                }
-            ],
+            activities: [{name: statuses[i]}]
         })
         i++
 
@@ -41,10 +43,9 @@ client.on("ready", () => {
     updateStatus()
 })
 
-client.on("messageCreate", (message) => {
-    if (message.content === "$off" && message.author.id == "653608166927368213") {
-        client.destroy()
-    }
-})
 
 client.login(process.env.TOKEN)
+
+export default client; dotenv
+
+
