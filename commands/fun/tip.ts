@@ -5,7 +5,6 @@ export default {
     callback: (message: Message, ...args:string[]) => {
         
         let tokens = message.content.split(" ");
-        
         if (tokens[0] == `${prefix}tip`) { 
             
             if (tokens.length > 2) {
@@ -14,6 +13,7 @@ export default {
             }
 
             let tip: any = parseInt(tokens[1]);
+            let replies: string[] = []
 
             if (!Number.isInteger(tip)) {
                 message.reply("Hey, that's not a valid tip!")
@@ -25,8 +25,6 @@ export default {
                 return
             }
                 
-            let replies: string[] = []
-
             switch (true) {
                 case (0 <= tip && tip < 1000): 
                     replies = [
@@ -46,6 +44,13 @@ export default {
                         "Oh, you dear sweet thing. 🥰",
                     ] 
                     break;
+                case (tip == 69) :
+                    replies = [
+                        "Mmm, now that's what I like to see. 😏",
+                        "Hell, I'm all wet. I mean -- I spilled a drink. Before you came in. Not 'cause you tipped me. Good god, I'm not that easy. 😈",
+                        "Thanks for the tips, sugar. I think it's time your generosity was... rewarded. 😏",
+                    ]
+                    break
                 case (1000 <= tip &&  tip < 10000): 
                     replies = [
                         "You keep that up, I might just have to pay you back somehow. 😋",
@@ -54,10 +59,8 @@ export default {
                         "I haven't seen someone throw that much money around since... my last boyfriend. 😘",
                         "Awwh, you're makin' me as shy as a hooker in confession! I'm not a hooker, though. Don't go spreading that around. 🤫",
                         "I'll be able to rebuild the Underdome in no time! 😎",
-                        "Thanks for the tips, sugar. I think it's time your generosity was... rewarded. 😏",
                         "All that, for little ol' me? You shouldn't have. 😊",
                         "You must be livin' the high life, flashing cash like that. I think I like it. 😜",
-                        "Mmm, now that's what I like to see. 😏",
                         "Keep it up, sugar, and I might have to find a way to show my appreciation. 😏",
                         "You sure know how to make a girl feel special. 😋",
                         "Keep 'em comin'. That's what I always say. 🤭",
@@ -66,10 +69,8 @@ export default {
                         "Thanks! This place ain't doing great, but it's still doing better than most -- nothing dulls the pain of losing a war quite like a strong glass of rakk-ale. 😓",
                     ] 
                     break;
-                
                 case (10000 <= tip): 
                     replies = [
-                        "Hell, I'm all wet. I mean -- I spilled a drink. Before you came in. Not 'cause you tipped me. Good god, I'm not that easy. 😈",
                         "You remind me of my last boyfriend. Think you met him. Name of Jack. Real charmer, at first. Always opening doors for me, *telling me I'm beautiful, shooting anyone in the face if they looked at me sideways. Course, then he got clingy and I *dropped him like a bad habit -- which as it turns out, wasn't the best idea. 😬",
                         "One step closer to rebuilding the Underdome. Jack didn't take it too well when I kicked him to the curb. Way he figured it, if he couldn't have the thing he loved, neither could I. He sent his goons to burn the Underdome to the ground. I think he's planning to rebuild it in his own image, but he's missing the stuff that made it great... the flash, the pizzazz, the personality... and his tits aren't as nice. 🤪",
                         "They say money can't buy you love, but it's a damned good replacement. Though, Mordecai might disagree with that. Poor guy... I offered him a rakk hive's worth of guns and cash for winning the top spot in my Underdome, but he never wanted any of it. If I had a nickel for every time he asked me to run away with him? Well, I wouldn't need a tip jar, that's for sure. 😆",
