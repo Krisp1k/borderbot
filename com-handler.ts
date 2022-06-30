@@ -2,13 +2,13 @@ import {Client} from 'discord.js'
 import fs from 'fs'
 import getFiles from './files'
 
+export const prefix = "$"
+export const suffix = ".ts"
+
 export default(client:Client) => {
     const commands = {} as {
         [key:string]: any
     }
-
-    const suffix = '.ts'
-    const prefix = "$"
 
     const commandFiles = getFiles('./commands',suffix)
     

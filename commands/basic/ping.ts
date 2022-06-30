@@ -1,6 +1,7 @@
 import { Message, MessageEmbed } from 'discord.js'
 import client from '../../index'
 
+
 export default {
     callback: (message: Message, ...args:string[]) => {
         message.channel.send({

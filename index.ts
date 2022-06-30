@@ -46,6 +46,6 @@ client.on("ready", () => {
 
 client.login(process.env.TOKEN)
 
-export default client; dotenv
+export default client
 
 

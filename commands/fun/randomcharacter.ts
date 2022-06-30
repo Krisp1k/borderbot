@@ -2,10 +2,9 @@ import { Message, MessageEmbed, MessageAttachment } from 'discord.js'
 
 export default {
     callback: (message: Message, ...args:string[]) => {
-
         const characters: {[key: string]: string} = {
-            "Moze": "./images/characters/moze.jpg", 
             "Amara": "./images/characters/amara.jpg",
+            "Moze": "./images/characters/moze.jpg", 
             "Zane": "./images/characters/zane.jpg", 
             "Fl4k": "./images/characters/flak.jpg", 
             "Zer0": "./images/characters/zero.jpg", 
@@ -43,23 +42,14 @@ export default {
 
         let year = new Date().getFullYear()
 
-        try { 
-            charEmbed.setDescription(`${message.author}, you are **${randomChar}**!`)
+        charEmbed.setDescription(`${message.author}, you are **${randomChar}**!`)
             .setTitle("Your random character")
             .setColor("#D2C119")
             .setImage(`attachment://${imgFileName}`) 
             .setFooter({text: `@BorderBot, ${year.toString()}`})
             .setTimestamp()
-            
-        } catch (e) {
-            console.error(e)
-            message.channel.send(`Error : ${e}`)
-            return
-        }
 
-        console.log(imgFileName)
-        console.log([`${message.author.username} (${message.author.id}) : ${message.content})`])
-
+        console.log([`${message.author.username} (${message.author.id}) : ${message.content}`])
         message.channel.send( {embeds: [charEmbed], files: [embedImage] })
 
     }
