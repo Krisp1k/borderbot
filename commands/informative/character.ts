@@ -12,27 +12,27 @@ export default {
                 "description": "Moze is a ",
                 "fact": "Moze has an affinity for fried food, and is apparently very open to trying delicacies so long as they are deep fried",
                 "ability":"Iron Bear - a mech that is capable of shooting rockets, grenades and has a minigun or a bear claw",
-                "img":"./images/characters/moze.jpg",
+                "img":"./images/characters/moze/0.jpg",
                 "wiki":"https://borderlands.fandom.com/wiki/Moze"
             }, 
             "amara": {
                 "name":"Amara",
-                "games":"",
-                "typeclass":"",
+                "games":"Borderlands 3",
+                "typeclass":"Playable character, The Siren",
                 "description":"",
                 "fact":"",
                 "ability":"",
-                "img":"./images/characters/amara.jpg",
-                "wiki":""
+                "img":"./images/characters/amara/0.jpg",
+                "wiki":"https://borderlands.fandom.com/wiki/Amara"
             },
             "zane": {
-                "name":"Zane",
+                "name":"Zane Flynt",
                 "games":"",
                 "typeclass":"",
                 "description":"",
                 "fact":"",
                 "ability":"",
-                "img":"./images/characters/zane.jpg",
+                "img":"./images/characters/zane/0.jpg",
                 "wiki":""
             }, 
             "fl4k": {
@@ -42,7 +42,7 @@ export default {
                 "description":"",
                 "fact":"",
                 "ability":"",
-                "img":"./images/characters/flak.jpg",
+                "img":"./images/characters/fl4k/0.jpg",
                 "wiki":""
             }, 
             "zer0": {
@@ -52,7 +52,7 @@ export default {
                 "description":"",
                 "fact":"",
                 "ability":"",
-                "img":"./images/characters/zero.jpg",
+                "img":"./images/characters/zer0/0.jpg",
                 "wiki":""
             }, 
             "maya": {
@@ -62,7 +62,7 @@ export default {
                 "description":"",
                 "fact":"",
                 "ability":"",
-                "img":"./images/characters/maya.jpg",
+                "img":"./images/characters/maya/0.jpg",
                 "wiki":""
             }, 
             "axton": {
@@ -72,7 +72,7 @@ export default {
                 "description":"",
                 "fact":"",
                 "ability":"",
-                "img":"./images/characters/axton.jpg",
+                "img":"./images/characters/axton/0.jpg",
                 "wiki":""
             } ,
             "salvador": {
@@ -82,7 +82,7 @@ export default {
                 "description":"",
                 "fact":"",
                 "ability":"",
-                "img":"./images/characters/salvador.jpg",
+                "img":"./images/characters/salvador/0.jpg",
                 "wiki":""
             },
             "lilith": {
@@ -92,7 +92,7 @@ export default {
                 "description":"",
                 "fact":"",
                 "ability":"",
-                "img":"./images/characters/lilith.jpg",
+                "img":"./images/characters/lilith/0.jpg",
                 "wiki":""
             },
             "brick": {
@@ -102,7 +102,7 @@ export default {
                 "description":"",
                 "fact":"",
                 "ability":"",
-                "img":"./images/characters/brick.jpg",
+                "img":"./images/characters/brick/0.jpg",
                 "wiki":""
             } ,
             "roland": {
@@ -112,7 +112,7 @@ export default {
                 "description":"",
                 "fact":"",
                 "ability":"",
-                "img":"./images/characters/roland.jpg",
+                "img":"./images/characters/roland/0.jpg",
                 "wiki":""
             },
             "mordecai": {
@@ -122,7 +122,7 @@ export default {
                 "description":"",
                 "fact":"",
                 "ability":"",
-                "img":"./images/characters/morde.jpg",
+                "img":"./images/characters/mordecai/0.jpg",
                 "wiki":""
             },
             "tiny tina": {
@@ -132,7 +132,7 @@ export default {
                 "description":"An unstable girl and also an explosives expert.",
                 "fact":"She has an intermittent exotropia (lazy eye) in her left eye. This was originally due to a glitch, but the developers enjoyed it, so they purposefully left it in.",
                 "ability":"EXPLODEEE",
-                "img":"./images/characters/tiny.jpg",
+                "img":"./images/characters/tiny_tina/0.jpg",
                 "wiki":"https://borderlands.fandom.com/wiki/Tiny_Tina"
             },
             "ellie": {
@@ -142,7 +142,7 @@ export default {
                 "description":"",
                 "fact":"",
                 "ability":"",
-                "img":"./images/characters/ellie.jpg",
+                "img":"./images/characters/ellie/0.jpg",
                 "wiki":""
             } ,
             "crazy earl": {
@@ -152,7 +152,7 @@ export default {
                 "description":"",
                 "fact":"",
                 "ability":"",
-                "img":"./images/characters/earl.jpg",
+                "img":"./images/characters/crazy_earl/0.jpg",
                 "wiki":""
             },
             "sir hammerlock": {
@@ -162,7 +162,7 @@ export default {
                 "description":"",
                 "fact":"",
                 "ability":"",
-                "img":"./images/characters/hammer.jpg",
+                "img":"./images/characters/sir_hammerlock/0.jpg",
                 "wiki":""
             },
             "typhon deLeon": {
@@ -172,7 +172,7 @@ export default {
                 "description":"",
                 "fact":"",
                 "ability":"",
-                "img":"./images/characters/typhon.jpg",
+                "img":"./images/characters/typhon/0.jpg",
                 "wiki":""
             },
             "claptrap": {
@@ -182,7 +182,7 @@ export default {
                 "description":"",
                 "fact":"",
                 "ability":"",
-                "img":"./images/characters/claptrap.jpg",
+                "img":"./images/characters/claptrap/0.jpg",
                 "wiki":""
             },
             "ava": {
@@ -192,7 +192,7 @@ export default {
                 "description":"",
                 "fact":"",
                 "ability":"",
-                "img":"./images/characters/ava.jpg",
+                "img":"./images/characters/ava/0.jpg",
                 "wiki":""
             },
             "tannis": {
@@ -202,7 +202,7 @@ export default {
                 "description":"",
                 "fact":"",
                 "ability":"",
-                "img":"./images/characters/tannis.jpg",
+                "img":"./images/characters/tannis/0.jpg",
                 "wiki":""
             },
             "Moxxi" : {
@@ -212,7 +212,7 @@ export default {
                 "description":"",
                 "fact":"",
                 "ability":"",
-                "img":"./images/characters/moxxi.jpg",
+                "img":"./images/characters/moxxi/0.jpg",
                 "wiki":""
             },
             "marcus": {
@@ -222,7 +222,7 @@ export default {
                 "description":"",
                 "fact":"",
                 "ability":"",
-                "img":"./images/characters/marcus.jpg",
+                "img":"./images/characters/marcus/0.jpg",
                 "wiki":""
             },
             "psycho":{
@@ -232,7 +232,7 @@ export default {
                 "description":"",
                 "fact":"",
                 "ability":"",
-                "img":"./images/characters/psycho.jpg",
+                "img":"./images/characters/psycho/0.jpg",
                 "wiki":""
             },
             "aurelia": {
@@ -242,7 +242,7 @@ export default {
                 "description":"",
                 "fact":"",
                 "ability":"",
-                "img":"./images/characters/aurelia.jpg",
+                "img":"./images/characters/aurelia/0.jpg",
                 "wiki":""
             },
             "calypso twins": {
@@ -252,7 +252,7 @@ export default {
                 "description":"",
                 "fact":"",
                 "ability":"",
-                "img":"./images/characters/calypsos.jpg",
+                "img":"./images/characters/calypso_twins/0.jpg",
                 "wiki":""
             },
             "handsome jack": {
@@ -262,7 +262,7 @@ export default {
                 "description":"",
                 "fact":"",
                 "ability":"",
-                "img":"./images/characters/jack.jpg",
+                "img":"./images/characters/handsome_jack/0.jpg",
                 "wiki":""
             }
         }
@@ -329,36 +329,39 @@ export default {
                 return
             }
 
+            if (tokens[2] == " ") {
+                tokens[2] = tokens[3]
+                tokens[3] = ""
+            }
+
             let keycharacter = (`${tokens[1]} ${tokens[2]}`).toLowerCase()
 
             if (tokens[2] == undefined) {
                 tokens[2] = ""
                 keycharacter = (`${tokens[1]}${tokens[2]}`).toLowerCase()
             }
-    
+
             const charImage = characters[keycharacter].img.toString()
-            const imgFileName = charImage.slice(20, charImage.length)
+            const imgFileName = charImage.slice(21 + keycharacter.length, charImage.length)
 
             const characterImage = new MessageAttachment(charImage)
             const characterEmbed = new MessageEmbed()
-            .setTitle(characters[keycharacter].name)
-            .setColor("#D2C119")
-            .setURL(`${characters[keycharacter].wiki}`)
-            .addFields(
-                {name:`Name :`,value:`${characters[keycharacter].name}`,inline:false},
-                {name:`Description :`,value:`${characters[keycharacter].description}`,inline:false},
-                {name:`Ability :`,value:`${characters[keycharacter].ability}`,inline:false},
-                {name:`Appears in :`,value:`${characters[keycharacter].games}`,inline:false},
-                {name:`Type / Class :`,value:`${characters[keycharacter].typeclass}`,inline:false},
-                {name:`Fun fact :`,value:`${characters[keycharacter].fact}`,inline:false}
-            )
-            .setImage(`attachment://${imgFileName}`)
-            .setFooter({text: `@BorderBot, ${year.toString()}`})
-            .setTimestamp()
+                .setTitle(characters[keycharacter].name)
+                .setColor("#D2C119")
+                .setURL(`${characters[keycharacter].wiki}`)
+                .addFields(
+                    {name:`Name :`,value:`${characters[keycharacter].name}`,inline:false},
+                    {name:`Description :`,value:`${characters[keycharacter].description}`,inline:false},
+                    {name:`Ability :`,value:`${characters[keycharacter].ability}`,inline:false},
+                    {name:`Appears in :`,value:`${characters[keycharacter].games}`,inline:false},
+                    {name:`Type / Class :`,value:`${characters[keycharacter].typeclass}`,inline:false},
+                    {name:`Fun fact :`,value:`${characters[keycharacter].fact}`,inline:false}
+                )
+                .setImage(`attachment://${imgFileName}`)
+                .setFooter({text: `@BorderBot, ${year.toString()}`})
+                .setTimestamp()
             
-            console.log([`${message.author.username} (${message.author.id}) : ${message.content}`])
             message.channel.send({ embeds: [characterEmbed], files: [characterImage]})
-            
         }
     } 
 }

@@ -19,9 +19,7 @@ export default {
             )
 
             message.channel.send({ embeds: [pingEmbed] })
-
             resultMessage.delete()
-            console.log([`${message.author.username} (${message.author.id}) : [${botLatency}ms], [${apiLatency}ms]`])
         }) 
     }
 }

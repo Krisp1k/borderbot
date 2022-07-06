@@ -44,13 +44,6 @@ export default {
                         "Oh, you dear sweet thing. 🥰",
                     ] 
                     break;
-                case (tip == 69) :
-                    replies = [
-                        "Mmm, now that's what I like to see. 😏",
-                        "Hell, I'm all wet. I mean -- I spilled a drink. Before you came in. Not 'cause you tipped me. Good god, I'm not that easy. 😈",
-                        "Thanks for the tips, sugar. I think it's time your generosity was... rewarded. 😏",
-                    ]
-                    break
                 case (1000 <= tip &&  tip < 10000): 
                     replies = [
                         "You keep that up, I might just have to pay you back somehow. 😋",
@@ -84,7 +77,14 @@ export default {
                     break;
             }
 
-            console.log([`${message.author.username} (${message.author.id}) : ${message.content}`])
+            if (tip == 69) {
+                replies = [
+                    "Mmm, now that's what I like to see. 😏",
+                    "Hell, I'm all wet. I mean -- I spilled a drink. Before you came in. Not 'cause you tipped me. Good god, I'm not that easy. 😏",
+                    "Thanks for the tips, sugar. I think it's time your generosity was... rewarded. 😈",
+                ]
+            }
+
             message.reply(replies[Math.floor(Math.random() * replies.length)].toString())
         }
     } 

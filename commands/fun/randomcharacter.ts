@@ -3,44 +3,46 @@ import { Message, MessageEmbed, MessageAttachment } from 'discord.js'
 export default {
     callback: (message: Message, ...args:string[]) => {
         const characters: {[key: string]: string} = {
-            "Amara": "./images/characters/amara.jpg",
-            "Moze": "./images/characters/moze.jpg", 
-            "Zane": "./images/characters/zane.jpg", 
-            "Fl4k": "./images/characters/flak.jpg", 
-            "Zer0": "./images/characters/zero.jpg", 
-            "Maya": "./images/characters/maya.jpg", 
-            "Axton": "./images/characters/axton.jpg" ,
-            "Salvador": "./images/characters/salvador.jpg",
-            "Lilith": "./images/characters/lilith.jpg",
-            "Brick": "./images/characters/brick.jpg" ,
-            "Roland": "./images/characters/roland.jpg",
-            "Mordecai": "./images/characters/morde.jpg",
-            "Tiny Tina": "./images/characters/tiny.jpg",
-            "Ellie": "./images/characters/ellie.jpg" ,
-            "Crazy Earl": "./images/characters/earl.jpg",
-            "Sir Hammerlock": "./images/characters/hammer.jpg",
-            "Typhon DeLeon": "./images/characters/typhon.jpg",
-            "Claptrap": "./images/characters/claptrap.jpg",
-            "Ava": "./images/characters/ava.jpg",
-            "Tannis": "./images/characters/tannis.jpg",
-            "Moxxi" : "./images/characters/moxxi.jpg",
-            "Marcus": "./images/characters/marcus.jpg",
-            "Psycho":"./images/characters/psycho.jpg",
-            "Aurelia": "./images/characters/aurelia.jpg",
-            "Calypso Twins": "./images/characters/calypsos.jpg",
-            "Handsome Jack": "./images/characters/jack.jpg"
+            "Amara": "./images/characters/amara/",
+            "Moze": "./images/characters/moze/", 
+            "Zane": "./images/characters/zane/", 
+            "Fl4k": "./images/characters/fl4k/", 
+            "Zer0": "./images/characters/zer0/", 
+            "Maya": "./images/characters/maya/", 
+            "Axton": "./images/characters/axton/" ,
+            "Salvador": "./images/characters/salvador/",
+            "Lilith": "./images/characters/lilith/",
+            "Brick": "./images/characters/brick/" ,
+            "Roland": "./images/characters/roland/",
+            "Mordecai": "./images/characters/mordecai/",
+            "Tiny Tina": "./images/characters/tiny_tina/",
+            "Ellie": "./images/characters/ellie/" ,
+            "Crazy Earl": "./images/characters/earl/",
+            "Sir Hammerlock": "./images/characters/sir_hammerlock/",
+            "Typhon DeLeon": "./images/characters/typhon_deleon/",
+            "Claptrap": "./images/characters/claptrap/",
+            "Ava": "./images/characters/ava/",
+            "Tannis": "./images/characters/tannis/",
+            "Moxxi" : "./images/characters/moxxi/",
+            "Marcus": "./images/characters/marcus/",
+            "Psycho":"./images/characters/psycho/",
+            "Aurelia": "./images/characters/aurelia/",
+            "Calypso Twins": "./images/characters/calypso_twins/",
+            "Handsome Jack": "./images/characters/handsome_jack/"
         }
 
         const randomValue = Math.floor(Math.random() * Object.keys(characters).length)
 
         const randomChar = Object.keys(characters)[randomValue]
-        const charImage = Object.values(characters)[randomValue]
-        const imgFileName = charImage.slice(20, charImage.length)
+        const charImagePath = Object.values(characters)[randomValue]
 
-        const embedImage = new MessageAttachment(charImage)
+        const randomImgIndex = Math.floor(Math.random() * 4)
+        const imgFileName = `${randomImgIndex}.jpg`
+
+        const embedImage = new MessageAttachment(`${charImagePath}${imgFileName}`)
         const charEmbed = new MessageEmbed()
 
-        let year = new Date().getFullYear()
+        const year = new Date().getFullYear()
 
         charEmbed.setDescription(`${message.author}, you are **${randomChar}**!`)
             .setTitle("Your random character")
@@ -49,7 +51,6 @@ export default {
             .setFooter({text: `@BorderBot, ${year.toString()}`})
             .setTimestamp()
 
-        console.log([`${message.author.username} (${message.author.id}) : ${message.content}`])
         message.channel.send( {embeds: [charEmbed], files: [embedImage] })
 
     }

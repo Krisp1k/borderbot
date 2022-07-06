@@ -5,6 +5,7 @@ export default {
     callback: (message: Message, ...args:string[]) => {
         if (message.author.id != "653608166927368213") {
             message.channel.send("**❗You do not have enough permissions to turn of the bot.❗**")
+            return
         } 
         client.destroy()
     } 
