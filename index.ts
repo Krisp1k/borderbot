@@ -23,7 +23,7 @@ client.on("ready", () => {
     const statuses = [
         "Anything related to Borderlands",
         "Type '$help' for more info",
-        "Currently version 1.0.0"
+        "Currently version 1.0"
     ]
     let i = 0
 
